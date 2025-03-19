@@ -1,0 +1,5 @@
+Flask==3.0.1
+firebase-admin
+flask-static-compress
+gunicorn
+werkzeug==3.0.1
