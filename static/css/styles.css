@@ -1,0 +1,214 @@
+@import url("https://cdn.jsdelivr.net/npm/tailwindcss@3.4.3/base.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css");
+
+:root {
+  --background-color: #ffffff;
+  --text-color: #333333;
+  --primary-color: #3b82f6;
+  --secondary-color: #f3f4f6;
+  --accent-color: #10b981;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;
+}
+
+.mobile-logout-link {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 0.5rem !important;
+}
+
+/* DataTables Custom Styling */
+.dataTables_wrapper .dataTables_filter input {
+  background-color: #f3f4f6;
+  color: #333333;
+  border-color: #d1d5db;
+  font-weight: 500;
+}
+
+.dataTables_wrapper .dataTables_length select {
+  background-color: #f3f4f6;
+  color: #333333;
+  border-color: #d1d5db;
+  font-weight: 500;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+  color: #333333 !important;
+  background-color: transparent !important;
+  border-color: #d1d5db !important;
+  margin: 0 0.25rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  transition: all 0.3s ease;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover,
+.dataTables_wrapper .dataTables_paginate .paginate_button:focus {
+  background-color: #e5e7eb !important;
+  color: #000000 !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current {
+  background-color: #3b82f6 !important;
+  color: #ffffff !important;
+}
+
+/* Improved Contrast and Readability */
+h1, h2, h3, h4, h5, h6 {
+  color: #000000;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.text-muted {
+  color: #6b7280;
+}
+
+/* Additional Readability Enhancements */
+.form-label {
+  color: #333333;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.form-input {
+  background-color: #f3f4f6;
+  border-color: #d1d5db;
+  color: #333333;
+  transition: all 0.3s ease;
+}
+
+.form-input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.25);
+}
+
+/* Quill Editor Light Theme Styles */
+.ql-snow.ql-toolbar {
+  background-color: #f3f4f6;
+  border-color: #d1d5db;
+  border-top-left-radius: 0.375rem;
+  border-top-right-radius: 0.375rem;
+}
+
+.ql-snow .ql-picker {
+  color: #333333;
+}
+
+.ql-snow .ql-picker-options {
+  background-color: #f3f4f6;
+  border-color: #d1d5db;
+}
+
+.ql-snow .ql-editor {
+  background-color: #ffffff;
+  color: #333333;
+  border-color: #d1d5db;
+  min-height: 150px;
+  border-bottom-left-radius: 0.375rem;
+  border-bottom-right-radius: 0.375rem;
+}
+
+.ql-snow .ql-editor.ql-blank::before {
+  color: #6b7280;
+}
+
+/* Quill content display styles */
+.quill-content {
+  line-height: 1.5;
+}
+
+.quill-content p {
+  margin-bottom: 0.5rem;
+}
+
+.quill-content ul, 
+.quill-content ol {
+  margin-left: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.quill-content blockquote {
+  border-left: 3px solid #e5e7eb;
+  padding-left: 1rem;
+  margin: 0.5rem 0;
+  color: #4b5563;
+}
+
+/* Grid.js Custom Styles */
+.gridjs-table {
+  border-collapse: collapse;
+  width: 100%;
+  font-family: 'Open Sans', sans-serif !important;
+}
+
+.gridjs-th {
+  background-color: #f3f4f6;
+  color: #111827;
+  font-weight: 600;
+  padding: 12px;
+  text-align: left;
+  border-bottom: 2px solid #e5e7eb;
+  font-family: 'Open Sans', sans-serif !important;
+}
+
+.gridjs-td {
+  padding: 12px;
+  border-bottom: 1px solid #e5e7eb;
+  font-family: 'Open Sans', sans-serif !important;
+}
+
+.gridjs-cell-content {
+  color: #111827;
+  font-weight: 500;
+  font-family: 'Open Sans', sans-serif !important;
+}
+
+/* Priority Colors */
+.priority-low {
+  color: #059669;
+  font-weight: 600;
+}
+
+.priority-medium {
+  color: #d97706;
+  font-weight: 600;
+}
+
+.priority-high {
+  color: #dc2626;
+  font-weight: 600;
+}
+
+/* Status Colors */
+.status-pending {
+  color: #d97706;
+  font-weight: 600;
+}
+
+.status-progress {
+  color: #2563eb;
+  font-weight: 600;
+}
+
+.status-completed {
+  color: #059669;
+  font-weight: 600;
+}
+
+/* Button Styles */
+.btn {
+  transition: all 0.3s ease;
+  font-weight: 600;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
